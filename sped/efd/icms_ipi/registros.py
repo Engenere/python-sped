@@ -2605,6 +2605,14 @@ class RegistroK001(Registro):
         Campo(2, 'IND_MOV'),
     ]
 
+class RegistroK010(Registro):
+    """
+    Informação sobre o tipo de leiaute (simplificado /completo)
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K010'),
+        Campo(2, 'IND_LEIAUTE'),
+    ]
 
 class RegistroK100(Registro):
     """
