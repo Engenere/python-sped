@@ -209,6 +209,7 @@ class Registro0220(Registro):
         CampoFixo(1, 'REG', '0220'),
         Campo(2, 'UNID_CONV'),
         CampoNumerico(3, 'FAT_CONV'),
+        Campo(4, 'COD_BARRA'),
     ]
 
 
