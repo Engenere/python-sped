@@ -16,6 +16,7 @@ from .registros import RegistroG990
 from .registros import RegistroH001
 from .registros import RegistroH990
 from .registros import RegistroK001
+from .registros import RegistroK010
 from .registros import RegistroK990
 from .registros import Registro1001
 from .registros import Registro1990
