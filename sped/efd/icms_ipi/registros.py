@@ -187,7 +187,7 @@ class Registro0206(Registro):
         CampoFixo(1, 'REG', '0206'),
         Campo(2, 'COD_COMB'),
     ]
-    
+
 
 class Registro0210(Registro):
     """
@@ -2551,7 +2551,7 @@ class RegistroH005(Registro):
     campos = [
         CampoFixo(1, 'REG', 'H005'),
         CampoData(2, 'DT_INV'),
-        CampoNumerico(3, 'VL_INV'),
+        CampoNumerico(3, 'VL_INV', precisao=2),
         Campo(4, 'MOT_INV'),
     ]
 
@@ -2564,9 +2564,9 @@ class RegistroH010(Registro):
         CampoFixo(1, 'REG', 'H010'),
         Campo(2, 'COD_ITEM'),
         Campo(3, 'UNID'),
-        CampoNumerico(4, 'QTD'),
-        CampoNumerico(5, 'VL_UNIT'),
-        CampoNumerico(6, 'VL_ITEM'),
+        CampoNumerico(4, 'QTD', precisao=2),
+        CampoNumerico(5, 'VL_UNIT', precisao=6),
+        CampoNumerico(6, 'VL_ITEM', precisao=2),
         Campo(7, 'IND_PROP'),
         Campo(8, 'COD_PART'),
         Campo(9, 'TXT_COMPL'),
@@ -2634,7 +2634,7 @@ class RegistroK200(Registro):
         CampoFixo(1, 'REG', 'K200'),
         CampoData(2, 'DT_EST'),
         Campo(3, 'COD_ITEM'),
-        CampoNumerico(4, 'QTD'),
+        CampoNumerico(4, 'QTD', precisao=3),
         Campo(5, 'IND_EST'),
         Campo(6, 'COD_PART'),
     ]
