@@ -208,7 +208,7 @@ class Registro0220(Registro):
     campos = [
         CampoFixo(1, 'REG', '0220'),
         Campo(2, 'UNID_CONV'),
-        CampoNumerico(3, 'FAT_CONV'),
+        CampoNumerico(3, 'FAT_CONV', precisao=6),
         Campo(4, 'COD_BARRA'),
     ]
 
